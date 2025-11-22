@@ -1,0 +1,16 @@
+.gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+b .gender-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.3rem;
+  padding: 1.3rem;
+}
+.gender-section {
+  display: flex;
+  flex-direction: column;
+}

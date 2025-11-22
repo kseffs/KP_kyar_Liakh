@@ -1,0 +1,91 @@
+.posts {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 6.2rem 0 5.9rem;
+        gap: 5rem;
+    }
+
+    &__header {
+        font-family: $header-font;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        margin: 0;
+        padding: 0 10rem;
+    }
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10rem;
+    }
+}
+
+.social-medias {
+    display: flex;
+    gap: 1.25rem;
+
+    &__element {
+        border-radius: 50%;
+    }
+}
+
+.embla {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5.1rem;
+
+    &__viewport {
+        overflow: hidden;
+    }
+
+    &__container {
+        display: flex;
+        gap: 1.5625rem;
+    }
+
+    &__image {
+        display: block;
+
+        &__moved{
+            padding-right: 1.5625rem;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 2.7rem;
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__dots {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        .embla__dot {
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: $inert-dot-color;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            padding: 0;
+
+            &.is-selected {
+                background-color: $light-color;
+                border: 1.8px solid $light-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+body {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  color: #ffffff;
+}
+
+.container {
+  width: 1116px;
+  margin: 0 auto;
+}
+
+.container-expanded {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+
+.jewel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5625rem;
+}
+.jewel__aligned {
+  align-items: flex-end;
+}
+.jewel__name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #272727;
+}
+.jewel__name__colored {
+  color: #ffffff;
+}
+.jewel__material {
+  margin: 0;
+  color: #757575;
+  font-weight: 300;
+}
+.jewel__material__colored {
+  color: #C2C2C2;
+}
+.jewel__price {
+  margin: 0;
+  color: #E2B67A;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.03rem;
+}
+.jewel__price__colored {
+  color: #EFC58B;
+}

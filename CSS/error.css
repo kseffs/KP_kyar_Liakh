@@ -1,0 +1,71 @@
+body {
+  background-image: url(../IMAGES/tsera.png);
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Forum", serif;
+  color: #eddfc0;
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 1116px;
+  margin: 0 auto;
+}
+
+.error-container {
+  padding: 4.2rem 0;
+}
+.error-block__header {
+  font-size: 20rem;
+  margin: 0;
+  line-height: 90%;
+}
+.error-block__quote {
+  font-size: 2rem;
+  max-width: 33rem;
+  margin: 0;
+}
+.error-block__paragraph {
+  font-size: 1.3rem;
+  max-width: 36rem;
+}
+.error-block__button {
+  padding: 0.8rem 4rem;
+  font-family: "Forum", serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  border: 3px solid #eddfc0;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 30px;
+}
+.error-block__button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.3rem 0.4rem #eddfc0;
+  transition: 0.3s ease;
+}
+
+@media all and (orientation: portrait), (max-width: 1200px) {
+  .error-block {
+    padding: 3rem;
+  }
+}
+@media all and (orientation: portrait), (max-width: 576px) {
+  .error-block {
+    padding: 2rem;
+  }
+  .error-block__header {
+    font-size: 11rem;
+  }
+  .error-block__quote {
+    font-size: 1.6rem;
+  }
+  .error-block__paragraph {
+    font-size: 1rem;
+  }
+  .error-block__button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=error.css.map */

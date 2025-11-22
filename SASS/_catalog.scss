@@ -1,0 +1,98 @@
+.catalog{
+    &-container{
+        display: grid;
+        grid-template-columns: 1fr 42% 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1.1rem;
+        padding: 1.3rem 0 1.2rem;
+        background-color: $light-color;
+    }
+}
+
+
+.jewel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1.95rem;
+    padding: 1.45rem 1.8rem ; 
+    background-color: $jewel-background;
+
+    &:hover{
+        transform: scale(1.02);
+        transform-origin: right center;
+        box-shadow: 0 0.5rem 0.8rem $material-light-color;
+        transition: 0.3s ease;
+    }
+
+    &__backgrounded{
+        background-image: url(../IMAGES/jewel_2.png);
+        background-size: cover;
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        justify-content: flex-end;
+        padding: 1.35rem 2rem;
+    }
+
+    &-block{
+        display: flex;
+        justify-content: center;
+        padding: 1.3rem 0.5rem;
+
+        &__narrowed{
+        padding: 1.6rem 0; 
+        }
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.52rem;
+
+        &__aligned{
+            align-items: flex-end;
+        }
+
+        &__name{
+            margin: 0;
+            font-weight: 400;
+            font-size: 1rem; //16
+            text-transform: uppercase;
+            letter-spacing: 0.05rem; //чтоб длина текста была 198, 5%
+            color:$dark-color;
+
+            &__colored{
+                color:$light-color;
+            }
+        }
+
+        &__material{
+            margin: 0;
+            color:$material-dark-color;
+            font-weight: 300;
+
+            &__colored{
+                color: $material-light-color;
+            }
+
+            &__colored-for-background{
+                color:$jewel-material-middle;
+            }
+        }
+
+        &__price{
+            margin: 0;
+            color:$price-dark-color;
+            font-family: $mark-font;
+            font-weight: 400;
+            font-style: italic;
+            letter-spacing: 3%;
+
+
+            &__colored{
+                color:$price-light-color;
+            }
+        }
+    }
+}

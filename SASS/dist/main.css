@@ -1,0 +1,402 @@
+@charset "UTF-8";
+body {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1116px;
+  margin: 0 auto;
+}
+
+.container-expanded {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration-line: none;
+  color: #ffffff;
+}
+.link__colored {
+  color: #272727;
+}
+
+.line {
+  height: 1px;
+}
+
+.header {
+  background: linear-gradient(to right, #ffffff 61%, #272727 39%);
+  width: 100%;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.75rem 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.9rem;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.34rem;
+  margin: 0;
+}
+.menu-list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.menu-burger {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #ffffff 61%, #272727 39%);
+}
+.hero-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "main-block" "main-bottom";
+}
+.hero-block {
+  padding-top: 15.8rem;
+  padding-right: 14rem;
+  grid-area: main-block;
+  color: #272727;
+  display: grid;
+  grid-template-columns: 53% 36%;
+  column-gap: 5.875rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "main-block__header main-block-ring" "main-block-collection main-block-ring";
+}
+.hero-block__header {
+  font-family: "Forum", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  grid-area: main-block__header;
+  margin: 0;
+  letter-spacing: 0.13rem;
+  padding: 0.5rem 4.6rem 0 0;
+  white-space: nowrap;
+}
+.hero-block-collection {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 2.375rem;
+  grid-area: main-block-collection;
+  padding-bottom: 1.1rem;
+}
+.hero-block-collection__text {
+  margin: 0;
+}
+.hero-block-collection__line {
+  height: 1px;
+  padding-bottom: 0.5rem;
+}
+.hero-block-collection__link {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #272727;
+}
+.hero-block-ring {
+  grid-area: main-block-ring;
+  display: flex;
+  align-items: center;
+}
+.hero-bottom {
+  grid-area: main-bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 0.3rem 3.875rem 0;
+}
+
+.language {
+  display: flex;
+  gap: 0.7rem;
+}
+.language__point {
+  font-family: "Futura PT", sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  font-weight: 400;
+  color: #C4C4C4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.language__point__active {
+  color: #272727;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.gender-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.3rem;
+  padding: 1.3rem 0;
+}
+.gender-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14rem 8.6rem 14.69rem;
+}
+.gender-section__male {
+  background-image: url(../IMAGES/male.png);
+}
+.gender-section__female {
+  background-image: url(../IMAGES/female.png);
+}
+.gender-section__switch {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.gender-section__header {
+  font-family: "Forum", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.14rem;
+  margin: 0;
+}
+.gender-section__line {
+  padding-top: 1.55rem;
+}
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  align-items: stretch;
+}
+.map-block {
+  padding: 10.6rem 10.1rem 10.75rem;
+}
+.map-block__header {
+  font-family: "Forum";
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 0.09rem;
+  margin: 0;
+}
+.map-block__text {
+  font-weight: 300;
+  max-width: 24rem;
+}
+.map-form {
+  padding-top: 2.55rem;
+}
+.map-form-address {
+  position: relative;
+}
+.map-form-address__input {
+  padding-right: 10.3rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2.35px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding-bottom: 0.5rem;
+}
+.map-form-address__input::placeholder {
+  font-family: "Futura PT";
+  color: #FFFFFF66;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.map-form-address__submit {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.map-card {
+  display: flex;
+  flex-grow: 1;
+}
+.map-card:hover {
+  cursor: pointer;
+}
+.map-card__link {
+  flex-grow: 1;
+}
+
+.catalog-container {
+  display: grid;
+  grid-template-columns: 1fr 42% 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.1rem;
+  padding: 1.3rem 0 1.2rem;
+  background-color: #ffffff;
+}
+
+.jewel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.95rem;
+  padding: 1.45rem 1.8rem;
+  background-color: #EDEDED;
+}
+.jewel__backgrounded {
+  background-image: url(../IMAGES/jewel_2.png);
+  background-size: cover;
+  grid-row: 1/3;
+  grid-column: 2/3;
+  justify-content: flex-end;
+  padding: 1.35rem 2rem;
+}
+.jewel-block {
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem 0.5rem;
+}
+.jewel-block__narrowed {
+  padding: 1.6rem 0;
+}
+.jewel-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.52rem;
+}
+.jewel-info__aligned {
+  align-items: flex-end;
+}
+.jewel-info__name {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #272727;
+}
+.jewel-info__name__colored {
+  color: #ffffff;
+}
+.jewel-info__material {
+  margin: 0;
+  color: #757575;
+  font-weight: 300;
+}
+.jewel-info__material__colored {
+  color: #C2C2C2;
+}
+.jewel-info__material__colored-for-background {
+  color: #E7E7E7;
+}
+.jewel-info__price {
+  margin: 0;
+  color: #E2B67A;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 3%;
+}
+.jewel-info__price__colored {
+  color: #EFC58B;
+}
+
+.posts-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
+  /* текст ограничен паддингами */
+}
+
+.posts__header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-track__slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.slider-track__slide img {
+  width: 100%;
+  display: block;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-controls__pref,
+.slider-controls__next {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.slider-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.slider-dots__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #666;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.slider-dots__dot__active {
+  background: #fff;
+  opacity: 1;
+}

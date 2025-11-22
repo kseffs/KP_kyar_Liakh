@@ -1,0 +1,59 @@
+// секция для мужчин и женщин
+.gender{
+    background-color: $light-color;
+    
+    &-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem; //почти 21
+    padding: 1.3rem 0;
+    }
+
+    &-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14rem 8.6rem 14.69rem;
+
+    
+    &:hover{
+        transform: scale(1.02);
+        transform-origin: right center;
+        box-shadow: 0 0.5rem 0.8rem $material-light-color;
+        transition: 0.3s ease;
+    }
+
+
+    &__male{
+        //////////////////////////////ПОМЕНЯТЬ ССЫЛКУ!!!!!!!!!!!!!
+        background-image: url(../IMAGES/male.png);
+        background-size: cover;
+    }
+    &__female{
+        //////////////////////////////ПОМЕНЯТЬ ССЫЛКУ!!!!!!!!!!!!!
+        background-image: url(../IMAGES/female.png);
+        background-size: cover;
+    }
+
+
+    &__switch{
+        font-size: 1.5rem; //24
+        font-weight: 300;
+        margin: 0;
+    }
+
+    &__header{
+        font-family: $header-font;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: 0.14rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__line{
+        padding-top: 1.55rem;
+    }
+    }
+}

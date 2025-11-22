@@ -1,0 +1,37 @@
+.header{
+    background: linear-gradient(to right, $light-color 61%, $dark-color 39%);
+    
+
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3.75rem 0; //60
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap:4.9rem; //===80
+    
+    &-list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 2.34rem; //40
+        margin: 0;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            gap: 0.625rem; //10
+        }
+    }
+
+    &-burger{
+        display: flex;
+        align-items: center;
+    }
+}

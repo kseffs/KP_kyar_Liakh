@@ -1,0 +1,46 @@
+// карта
+.map{
+
+    &-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: stretch;
+    }
+    
+    &-block{
+        padding: 10.6rem 10.1rem 10.75rem;
+
+        &__header{
+            font-family: $header-font;
+            font-weight: 400;
+            font-size: 48px;
+            letter-spacing: 0.09rem;
+            margin: 0;
+        }
+
+        &__text{
+            font-weight: 300;
+            max-width: 24rem;
+        }
+    }
+
+    &-card{
+        display: flex;
+        flex-grow: 1;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.02);
+            transform-origin: right center;
+            box-shadow: 0 0.5rem 0.8rem $material-light-color;
+            transition: 0.3s ease;
+        }
+        
+        &__link{
+            flex-grow: 1;
+        }
+    }
+}
