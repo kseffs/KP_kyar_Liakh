@@ -57,7 +57,7 @@ body{
     }
 }
 
-@media all and (orientation:portrait), (max-width: 1200px) {
+@media all and (max-width: 1200px) {
     .error{
 
         &-block{
@@ -66,7 +66,15 @@ body{
     }
 }
 
-@media all and (orientation:portrait), (max-width: 576px) {
+
+@media all and (max-width: 768px) {
+    body{
+        background-size: auto;
+    }
+}
+
+
+@media all and (max-width: 576px) {
     .error{
         &-block{
             padding: 2rem;
