@@ -51,6 +51,11 @@
     padding: 0;
     border-radius: 7%;
     border: 1px solid $material-light-color;
+    transition: 0.4s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
 
     &__link{
         display: block;

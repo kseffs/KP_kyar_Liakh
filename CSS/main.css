@@ -612,6 +612,10 @@ body {
   padding: 0;
   border-radius: 7%;
   border: 1px solid #C2C2C2;
+  transition: 0.4s ease;
+}
+.app:hover {
+  transform: scale(1.05);
 }
 .app__link {
   display: block;
