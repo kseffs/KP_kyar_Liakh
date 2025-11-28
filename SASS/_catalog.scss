@@ -17,12 +17,12 @@
     gap:1.95rem;
     padding: 1.45rem 1.8rem ; 
     background-color: $jewel-background;
+    transition: 0.4s ease;
 
     &:hover{
-        transform: scale(1.02);
+        transform: scale(1.005);
         transform-origin: right center;
-        box-shadow: 0 0.5rem 0.8rem $material-light-color;
-        transition: 0.3s ease;
+        box-shadow: 0 0.2rem 0.4rem $material-light-color;
     }
 
     &__backgrounded{
@@ -87,7 +87,7 @@
             font-family: $mark-font;
             font-weight: 400;
             font-style: italic;
-            letter-spacing: 3%;
+            letter-spacing: 0.05rem;
 
 
             &__colored{

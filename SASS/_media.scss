@@ -1,5 +1,5 @@
 
-@media all and (orientation:portrait), (max-width: 1400px) {
+@media all and (max-width: 1400px) {
     .catalog{
         &-container{
             grid-template-columns: auto auto;
@@ -17,7 +17,7 @@
 }
     
     
-@media all and (orientation:portrait), (max-width: 1200px) {
+@media all and (max-width: 1200px) {
 
     .header{
         &-container{
@@ -31,9 +31,6 @@
             column-gap: 2rem;
         }
 
-        &-bottom{
-        padding-right: 4rem;
-        }
     }
 
     .contacts{
@@ -71,7 +68,7 @@
 
 
 
-@media all and (orientation:portrait), (max-width: 1024px) {
+@media all and (max-width: 1024px) {
     .menu{
 
         &-list{
@@ -83,7 +80,7 @@
         
         &-block{
             grid-template-columns: auto;
-            column-gap: 1.5rem;
+            column-gap: 1.7rem;
             padding: 15.8rem 1.5rem 0;
 
             &__header{
@@ -102,7 +99,7 @@
         }
 
         &-bottom{
-            padding:0 3rem 3rem;
+            padding:0 0 3rem;
         }
     }
 
@@ -129,7 +126,7 @@
 }
 
 
-@media all and (orientation:portrait), (max-width: 768px) {
+@media all and (max-width: 768px) {
 
     .header{        
         background: $light-color;
@@ -178,6 +175,12 @@
         }
     }
     .jewel{
+
+        &:hover{
+        transform: none;
+        box-shadow: none;
+        }  
+
         &__backgrounded{
             grid-row: 3 / 4;
             grid-column: 1 / 2;
@@ -228,11 +231,25 @@
     .apps{
         justify-content: center;
     }
+
+    .block-link{
+        &:hover{
+        transform: none;
+        box-shadow: none;
+        }  
+    }
+    
+    .map-card{
+        &:hover{
+        transform: none;
+        box-shadow: none;
+        }  
+    }
 }
 
 
 
-@media all and (orientation:portrait), (max-width:576px){
+@media all and (max-width:576px){
     .logotype__image{
         max-width: 12rem;
         &__contant{
@@ -293,7 +310,7 @@
     }
 }
 
-@media all and (orientation:portrait), (max-width:425px){
+@media all and (max-width:425px){
 
     .form{
         padding-top: 1.5rem;
@@ -325,7 +342,7 @@
 
     .hero{
         &-block{
-            padding: 0 1.3rem;
+            padding: 0 1.2rem;
 
             &__header{
                 font-size: 2.5rem;
@@ -337,6 +354,7 @@
             }
         }
     }
+
     .jewel-info__aligned{
         visibility: hidden;
     }
@@ -347,112 +365,4 @@
     .embla__controls{
         gap:0.5rem;
     }
-}
-
-
-//
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-@media all and (orientation:portrait), (max-width: 1024px) {
-}
-
-
-@media all and (max-width: 768px) {
-
-}
-
-@media all and (orientation:portrait), (max-width:576px){
-}
-////
-/// 
-/// 
-
-
-
-@media all and (orientation:portrait), (max-width: 1200px) {
-
-    
-}
-
-@media all and (orientation:portrait), (max-width: 1024px) {
-
-}
-
-
-@media all and (max-width: 768px) {
-}
-
-@media all and (orientation:portrait), (max-width:576px){
-
-}
-
-@media all and (orientation:portrait), (max-width:425px){
-
-}
-
-//
-
-
-@media all and (orientation:portrait), (max-width: 1024px) {
-
-
-}
-
-@media all and (orientation:portrait), (max-width:576px){
-}
-//
-
-@media all and (orientation:portrait), (max-width: 1024px) {
-   
-}
-
-@media all and (orientation:portrait), (max-width: 768px) {
-}
-
-@media all and (orientation:portrait), (max-width: 576px) {
-
-}
-//
-
-
-
-@media all and (orientation:portrait), (max-width: 1400px) {
-
-///////////////cataloggg 1200
-}
-
-@media all and (orientation:portrait), (max-width: 768px) {
-}
-
-@media all and (orientation:portrait), (max-width:576px){
-}
-
-//
-
-@media all and (orientation:portrait), (max-width: 768px) {
-}
-
-///
-/// 
-
-
-@media all and (orientation:portrait), (max-width: 1200px) {
-
-}
-
-@media all and (orientation:portrait), (max-width: 768px) {
-}
-//
-
-
-
-@media all and (orientation:portrait), (max-width: 1200px) {
-}
-
-@media all and (orientation:portrait), (max-width: 768px) {
-}
-
-@media all and (orientation:portrait), (max-width:576px){
 }

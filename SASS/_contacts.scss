@@ -40,6 +40,12 @@
 
         &__phone{
             margin: 0;
+            transition: 0.4s ease;
+
+            &:hover{
+                color: $price-light-color;
+                font-size: larger;
+            }
         }
 
         &__label{

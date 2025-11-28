@@ -20,21 +20,39 @@ body {
 .link {
   text-decoration-line: none;
   color: #ffffff;
+  transition: 0.4s ease;
 }
 .link:hover {
-  color: #0a5d4c;
-  transition: 1s;
-  font-size: larger;
+  color: #EFC58B;
+  font-size: 104%;
 }
 .link__colored {
   color: #272727;
 }
+.link__colored:hover {
+  color: #0a5d4c;
+}
 .link-image {
   display: inline-block;
+  transition: 0.4s ease;
 }
 .link-image:hover {
-  transform: scale(1.25);
-  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+.link-image__smaller:hover {
+  transform: scale(1.04);
+}
+
+.block-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s ease;
+}
+.block-link:hover {
+  transform: scale(1.003);
+  transform-origin: right center;
+  box-shadow: 0 0.2rem 0.4rem #C2C2C2;
 }
 
 .line {
@@ -43,11 +61,10 @@ body {
 
 .form {
   padding-top: 2.55rem;
+  transition: 0.4s ease;
 }
 .form:hover {
-  transform: scale(1.1);
-  transition: 0.3s ease;
-  border-radius: 7%;
+  transform: scale(1.03);
 }
 .form__moved {
   padding-top: 1.5rem;
@@ -251,12 +268,6 @@ body {
   align-items: center;
   padding: 14rem 8.6rem 14.69rem;
 }
-.gender-section:hover {
-  transform: scale(1.02);
-  transform-origin: right center;
-  box-shadow: 0 0.5rem 0.8rem #C2C2C2;
-  transition: 0.3s ease;
-}
 .gender-section__male {
   background-image: url(../IMAGES/male.png);
   background-size: cover;
@@ -277,6 +288,11 @@ body {
   letter-spacing: 0.14rem;
   text-align: center;
   margin: 0;
+  transition: 0.4s ease;
+}
+.gender-section__header:hover {
+  color: #EFC58B;
+  font-size: 4.2rem;
 }
 .gender-section__line {
   padding-top: 1.55rem;
@@ -307,13 +323,13 @@ body {
 .map-card {
   display: flex;
   flex-grow: 1;
+  transition: 0.4s ease;
 }
 .map-card:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.003);
   transform-origin: right center;
-  box-shadow: 0 0.5rem 0.8rem #C2C2C2;
-  transition: 0.3s ease;
+  box-shadow: 0 0.1rem 0.3rem #C2C2C2;
 }
 .map-card__link {
   flex-grow: 1;
@@ -335,12 +351,12 @@ body {
   gap: 1.95rem;
   padding: 1.45rem 1.8rem;
   background-color: #EDEDED;
+  transition: 0.4s ease;
 }
 .jewel:hover {
-  transform: scale(1.02);
+  transform: scale(1.005);
   transform-origin: right center;
-  box-shadow: 0 0.5rem 0.8rem #C2C2C2;
-  transition: 0.3s ease;
+  box-shadow: 0 0.2rem 0.4rem #C2C2C2;
 }
 .jewel__backgrounded {
   background-image: url(../IMAGES/jewel_2.png);
@@ -395,7 +411,7 @@ body {
   font-family: "Segoe UI", serif;
   font-weight: 400;
   font-style: italic;
-  letter-spacing: 3%;
+  letter-spacing: 0.05rem;
 }
 .jewel-info__price__colored {
   color: #EFC58B;
@@ -516,6 +532,11 @@ body {
 }
 .contacts-block__phone {
   margin: 0;
+  transition: 0.4s ease;
+}
+.contacts-block__phone:hover {
+  color: #EFC58B;
+  font-size: larger;
 }
 .contacts-block__label {
   font-weight: 400;
@@ -603,7 +624,7 @@ body {
   background-image: url(../IMAGES//google.png);
 }
 
-@media all and (orientation: portrait), (max-width: 1400px) {
+@media all and (max-width: 1400px) {
   .catalog-container {
     grid-template-columns: auto auto;
     grid-template-rows: repeat(3, 1fr);
@@ -614,7 +635,7 @@ body {
     grid-column: 2/3;
   }
 }
-@media all and (orientation: portrait), (max-width: 1200px) {
+@media all and (max-width: 1200px) {
   .header-container {
     padding: 3.75rem 5rem;
   }
@@ -622,9 +643,6 @@ body {
     padding: 15.8rem 4rem 0;
     -moz-column-gap: 2rem;
          column-gap: 2rem;
-  }
-  .hero-bottom {
-    padding-right: 4rem;
   }
   .contacts-image {
     width: 100%;
@@ -649,14 +667,14 @@ body {
     gap: 3.5rem;
   }
 }
-@media all and (orientation: portrait), (max-width: 1024px) {
+@media all and (max-width: 1024px) {
   .menu-list {
     display: none;
   }
   .hero-block {
     grid-template-columns: auto;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
+    -moz-column-gap: 1.7rem;
+         column-gap: 1.7rem;
     padding: 15.8rem 1.5rem 0;
   }
   .hero-block__header {
@@ -671,7 +689,7 @@ body {
     width: 100%;
   }
   .hero-bottom {
-    padding: 0 3rem 3rem;
+    padding: 0 0 3rem;
   }
   .gender-container {
     grid-template-columns: auto;
@@ -686,7 +704,7 @@ body {
     min-height: 25rem;
   }
 }
-@media all and (orientation: portrait), (max-width: 768px) {
+@media all and (max-width: 768px) {
   .header {
     background: #ffffff;
   }
@@ -718,6 +736,10 @@ body {
     grid-template-columns: auto;
     grid-template-rows: repeat(5, 1fr);
   }
+  .jewel:hover {
+    transform: none;
+    box-shadow: none;
+  }
   .jewel__backgrounded {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -748,8 +770,16 @@ body {
   .apps {
     justify-content: center;
   }
+  .block-link:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  .map-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
-@media all and (orientation: portrait), (max-width: 576px) {
+@media all and (max-width: 576px) {
   .logotype__image {
     max-width: 12rem;
   }
@@ -787,7 +817,7 @@ body {
     padding: 0 1rem;
   }
 }
-@media all and (orientation: portrait), (max-width: 425px) {
+@media all and (max-width: 425px) {
   .form {
     padding-top: 1.5rem;
   }
@@ -814,7 +844,7 @@ body {
     top: 10%;
   }
   .hero-block {
-    padding: 0 1.3rem;
+    padding: 0 1.2rem;
   }
   .hero-block__header {
     font-size: 2.5rem;

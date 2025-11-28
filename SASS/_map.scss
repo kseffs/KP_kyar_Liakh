@@ -1,4 +1,3 @@
-// карта
 .map{
 
     &-container{
@@ -30,13 +29,13 @@
     &-card{
         display: flex;
         flex-grow: 1;
+        transition: 0.4s ease;
 
         &:hover{
             cursor: pointer;
-            transform: scale(1.02);
+            transform: scale(1.003);
             transform-origin: right center;
-            box-shadow: 0 0.5rem 0.8rem $material-light-color;
-            transition: 0.3s ease;
+            box-shadow: 0 0.1rem 0.3rem $material-light-color;
         }
         
         &__link{
