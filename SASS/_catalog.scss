@@ -25,7 +25,7 @@
         box-shadow: 0 0.2rem 0.4rem $material-light-color;
     }
 
-    &__backgrounded{
+    &--backgrounded{
         background-image: url(../IMAGES/jewel_2.webp);
         background-size: cover;
         grid-row: 1 / 3;
@@ -39,7 +39,7 @@
         justify-content: center;
         padding: 1.3rem 0.5rem;
 
-        &__narrowed{
+        &--narrowed{
         padding: 1.6rem 0; 
         }
     }
@@ -50,7 +50,7 @@
         align-items: flex-start;
         gap: 0.52rem;
 
-        &__aligned{
+        &--aligned{
             align-items: flex-end;
         }
 
@@ -62,7 +62,7 @@
             letter-spacing: 0.05rem; //чтоб длина текста была 198, 5%
             color:$dark-color;
 
-            &__colored{
+            &--colored{
                 color:$light-color;
             }
         }
@@ -72,11 +72,11 @@
             color:$material-dark-color;
             font-weight: 300;
 
-            &__colored{
+            &--colored{
                 color: $material-light-color;
             }
 
-            &__colored-for-background{
+            &--colored-for-background{
                 color:$jewel-material-middle;
             }
         }
@@ -90,7 +90,7 @@
             letter-spacing: 0.05rem;
 
 
-            &__colored{
+            &--colored{
                 color:$price-light-color;
             }
         }

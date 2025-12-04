@@ -34,7 +34,7 @@
         flex-direction: column;
         gap: 0.65rem;
 
-        &__moved{
+        &--moved{
             gap: 0.95rem;
         }
 
@@ -56,11 +56,11 @@
             padding-top: 0.85rem;
             letter-spacing: 0.06rem;
 
-            &__moved{
+            &--moved{
                 padding: 0 0 1.2rem;
             }
 
-            &__miniaturized{
+            &--miniaturized{
             font-size: 0.875rem;
             padding: 0;
             letter-spacing: 0.045rem;
@@ -73,7 +73,7 @@
             font-size: 1.375rem;
             font-weight: 300;
 
-            &__miniaturized{   
+            &--miniaturized{   
             font-size: 1.125rem;
             }
         }

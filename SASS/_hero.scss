@@ -97,7 +97,7 @@
         cursor: pointer;
         transition: color 0.2s ease;
         
-        &__active {
+        &--active {
             color: $dark-color;
         }
     }

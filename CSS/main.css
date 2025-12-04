@@ -26,10 +26,10 @@ body {
   color: #EFC58B;
   font-size: 104%;
 }
-.link__colored {
+.link--colored {
   color: #272727;
 }
-.link__colored:hover {
+.link--colored:hover {
   color: #0a5d4c;
 }
 .link-image {
@@ -39,7 +39,7 @@ body {
 .link-image:hover {
   transform: scale(1.1);
 }
-.link-image__smaller:hover {
+.link-image--smaller:hover {
   transform: scale(1.04);
 }
 
@@ -66,10 +66,10 @@ body {
 .form:hover {
   transform: scale(1.03);
 }
-.form__moved {
+.form--moved {
   padding-top: 1.5rem;
 }
-.form__miniaturized {
+.form--miniaturized {
   padding-top: 0.1rem;
 }
 .form-address {
@@ -99,22 +99,22 @@ body {
 .form-address__input:focus {
   outline: none;
 }
-.form-address__input__colored {
+.form-address__input--colored {
   border-bottom: 2.35px solid #272727;
   padding-right: 3.7rem;
   color: #272727;
 }
-.form-address__input__colored::-moz-placeholder {
+.form-address__input--colored::-moz-placeholder {
   color: #959595;
   font-size: 1.375rem;
   font-weight: 300;
 }
-.form-address__input__colored::placeholder {
+.form-address__input--colored::placeholder {
   color: #959595;
   font-size: 1.375rem;
   font-weight: 300;
 }
-.form-address__input__moved {
+.form-address__input--moved {
   padding-right: 6.5rem;
   font-size: 0.875rem;
 }
@@ -128,7 +128,7 @@ body {
   cursor: pointer;
 }
 
-.logotype__moved {
+.logotype--moved {
   padding-top: 1rem;
 }
 
@@ -248,7 +248,7 @@ body {
   cursor: pointer;
   transition: color 0.2s ease;
 }
-.language__point__active {
+.language__point--active {
   color: #272727;
 }
 
@@ -268,11 +268,11 @@ body {
   align-items: center;
   padding: 14rem 8.6rem 14.69rem;
 }
-.gender-section__male {
+.gender-section--male {
   background-image: url(../IMAGES/male.webp);
   background-size: cover;
 }
-.gender-section__female {
+.gender-section--female {
   background-image: url(../IMAGES/female.webp);
   background-size: cover;
 }
@@ -358,7 +358,7 @@ body {
   transform-origin: right center;
   box-shadow: 0 0.2rem 0.4rem #C2C2C2;
 }
-.jewel__backgrounded {
+.jewel--backgrounded {
   background-image: url(../IMAGES/jewel_2.webp);
   background-size: cover;
   grid-row: 1/3;
@@ -371,7 +371,7 @@ body {
   justify-content: center;
   padding: 1.3rem 0.5rem;
 }
-.jewel-block__narrowed {
+.jewel-block--narrowed {
   padding: 1.6rem 0;
 }
 .jewel-info {
@@ -380,7 +380,7 @@ body {
   align-items: flex-start;
   gap: 0.52rem;
 }
-.jewel-info__aligned {
+.jewel-info--aligned {
   align-items: flex-end;
 }
 .jewel-info__name {
@@ -391,7 +391,7 @@ body {
   letter-spacing: 0.05rem;
   color: #272727;
 }
-.jewel-info__name__colored {
+.jewel-info__name--colored {
   color: #ffffff;
 }
 .jewel-info__material {
@@ -399,10 +399,10 @@ body {
   color: #757575;
   font-weight: 300;
 }
-.jewel-info__material__colored {
+.jewel-info__material--colored {
   color: #C2C2C2;
 }
-.jewel-info__material__colored-for-background {
+.jewel-info__material--colored-for-background {
   color: #E7E7E7;
 }
 .jewel-info__price {
@@ -413,7 +413,7 @@ body {
   font-style: italic;
   letter-spacing: 0.05rem;
 }
-.jewel-info__price__colored {
+.jewel-info__price--colored {
   color: #EFC58B;
 }
 
@@ -463,7 +463,7 @@ body {
 .embla__image {
   display: block;
 }
-.embla__image__moved {
+.embla__image--moved {
   padding-right: 1.5625rem;
 }
 .embla__controls {
@@ -527,7 +527,7 @@ body {
   flex-direction: column;
   gap: 0.65rem;
 }
-.contacts-block__moved {
+.contacts-block--moved {
   gap: 0.95rem;
 }
 .contacts-block__phone {
@@ -546,10 +546,10 @@ body {
   padding-top: 0.85rem;
   letter-spacing: 0.06rem;
 }
-.contacts-block__label__moved {
+.contacts-block__label--moved {
   padding: 0 0 1.2rem;
 }
-.contacts-block__label__miniaturized {
+.contacts-block__label--miniaturized {
   font-size: 0.875rem;
   padding: 0;
   letter-spacing: 0.045rem;
@@ -560,7 +560,7 @@ body {
   font-size: 1.375rem;
   font-weight: 300;
 }
-.contacts-block__link__miniaturized {
+.contacts-block__link--miniaturized {
   font-size: 1.125rem;
 }
 
@@ -621,10 +621,10 @@ body {
   display: block;
   padding: 0.86rem 2.75rem;
 }
-.app__appstore {
+.app--appstore {
   background-image: url(../IMAGES/appstore.png);
 }
-.app__googleplay {
+.app--googleplay {
   background-image: url(../IMAGES//google.png);
 }
 
@@ -634,7 +634,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     padding: 1.1rem;
   }
-  .jewel__backgrounded {
+  .jewel--backgrounded {
     grid-row: 1/3;
     grid-column: 2/3;
   }
@@ -744,7 +744,7 @@ body {
     transform: none;
     box-shadow: none;
   }
-  .jewel__backgrounded {
+  .jewel--backgrounded {
     grid-row: 3/4;
     grid-column: 1/2;
     background-image: url(../IMAGES/jewel_2__cut.webp);
@@ -764,7 +764,7 @@ body {
   .social-medias {
     grid-area: social-medias;
   }
-  .contacts-block__moved {
+  .contacts-block--moved {
     align-items: center;
   }
   .footer-contacts {
@@ -837,7 +837,7 @@ body {
   .form {
     padding-top: 1.5rem;
   }
-  .form__miniaturiaed {
+  .form--miniaturiaed {
     width: auto;
   }
   .form-address {
@@ -852,7 +852,7 @@ body {
   .form-address__input::placeholder {
     font-size: 0.9rem;
   }
-  .form-address__input__moved {
+  .form-address__input--moved {
     padding-right: 2rem;
   }
   .form-address__submit {

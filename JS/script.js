@@ -26,10 +26,10 @@ let buttons = document.querySelectorAll('.language__point');
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', function () {
     for (let j = 0; j < buttons.length; j++) {
-      buttons[j].classList.remove('language__point__active');
+      buttons[j].classList.remove('language__point--active');
     }
 
-    this.classList.add('language__point__active');
+    this.classList.add('language__point--active');
 
     let lang = this.dataset.lang;
     switchLanguage(lang);

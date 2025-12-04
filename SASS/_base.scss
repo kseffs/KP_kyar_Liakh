@@ -26,7 +26,7 @@ body {
         color: $price-light-color;
         font-size:104%;
     }
-    &__colored{
+    &--colored{
         color: $dark-color;
 
         &:hover{
@@ -42,7 +42,7 @@ body {
             transform: scale(1.1);
         }
 
-        &__smaller{
+        &--smaller{
             &:hover{
                 transform: scale(1.04);
             }
@@ -77,11 +77,11 @@ body {
         transform: scale(1.03);
     }
 
-    &__moved{
+    &--moved{
         padding-top: 1.5rem;
     }
 
-    &__miniaturized{
+    &--miniaturized{
         padding-top: 0.1rem;
     }
 
@@ -108,7 +108,7 @@ body {
                 outline: none;     
             }
 
-            &__colored{
+            &--colored{
                 border-bottom: 2.35px solid $dark-color; 
                 padding-right: 3.7rem;
                 color: $dark-color;
@@ -120,7 +120,7 @@ body {
                 }
             }
 
-            &__moved{
+            &--moved{
                 padding-right: 6.5rem;
                 font-size: 0.875rem;
             }
@@ -139,7 +139,7 @@ body {
 }
 
 .logotype{
-    &__moved{
+    &--moved{
         padding-top: 1rem;
     }
 }
