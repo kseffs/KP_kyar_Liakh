@@ -799,8 +799,20 @@ body {
   .hero-block {
     padding: 2rem;
   }
+  .posts__header {
+    font-size: 2.7rem;
+  }
+  .posts__header br {
+    display: none;
+  }
   .gender-section {
     padding: 5rem 2rem;
+  }
+  .gender-section__switch {
+    font-size: 1.3rem;
+  }
+  .gender-section__header {
+    font-size: 3rem;
   }
   .map-block {
     padding: 4rem 2rem;
