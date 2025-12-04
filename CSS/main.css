@@ -269,11 +269,11 @@ body {
   padding: 14rem 8.6rem 14.69rem;
 }
 .gender-section__male {
-  background-image: url(../IMAGES/male.png);
+  background-image: url(../IMAGES/male.webp);
   background-size: cover;
 }
 .gender-section__female {
-  background-image: url(../IMAGES/female.png);
+  background-image: url(../IMAGES/female.webp);
   background-size: cover;
 }
 .gender-section__switch {
@@ -359,7 +359,7 @@ body {
   box-shadow: 0 0.2rem 0.4rem #C2C2C2;
 }
 .jewel__backgrounded {
-  background-image: url(../IMAGES/jewel_2.png);
+  background-image: url(../IMAGES/jewel_2.webp);
   background-size: cover;
   grid-row: 1/3;
   grid-column: 2/3;
@@ -747,7 +747,7 @@ body {
   .jewel__backgrounded {
     grid-row: 3/4;
     grid-column: 1/2;
-    background-image: url(../IMAGES/jewel_2__cut.png);
+    background-image: url(../IMAGES/jewel_2__cut.webp);
   }
   .posts__header {
     padding: 0 3rem;
